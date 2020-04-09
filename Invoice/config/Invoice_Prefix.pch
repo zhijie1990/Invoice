@@ -1,0 +1,99 @@
+//
+//  Invoice_Prefix.pch
+//  Invoice
+//
+//  Created by zj on 2020/3/26.
+//  Copyright © 2020 zj. All rights reserved.
+//
+
+#ifndef Invoice_Prefix_pch
+#define Invoice_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "APIUrl.h"
+#import "UIColor+expanded.h"
+#import "UIImage+Common.h"
+#import "Masonry.h"
+#import "UIView+Common.h"
+#import "NSString+Common.h"
+#import "NSObject+common.h"
+#import "NSString+WPAttributedMarkup.h"
+//#import <CYLTabBarController/CYLTabBarController.h>
+#import "CYLTabBarController.h"
+#import "MBProgressHUD.h"
+#import "BM_NetAPIManager.h"
+
+
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define SCREEN_MAX_LENGTH (MAX(DEVICE_WIDTH, DEVICE_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(DEVICE_WIDTH, DEVICE_HEIGHT))
+#define DEVICE_SCALE [UIScreen mainScreen].scale
+
+#define DEVICE_WIDTH [UIScreen mainScreen].bounds.size.width
+#define DEVICE_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+//iphonex
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_IPHONE_X_XS (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
+
+#define IS_IPHONE_XR ((IS_IPHONE && SCREEN_MAX_LENGTH == 896.0) && DEVICE_SCALE == 2.0)
+
+#define IS_IPHONE_XSMAX ((IS_IPHONE && SCREEN_MAX_LENGTH == 896.0) && DEVICE_SCALE == 3.0)
+
+//status高度 iphoneX=44 other=20
+
+#define GLOBAL_SYS_STATUS_HEIGHT  ((IS_IPHONE_X_XS || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? 44.0 : 20.0)
+
+//navigationbar height 44
+
+#define GLOBAL_SYS_NAVIGATION_HEIGHT ((IS_IPHONE_X_XS || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? 44.0 : 44.0)
+
+//navigation height + status height
+
+#define GLOBAL_SYS_TOP_HEIGHT (GLOBAL_SYS_STATUS_HEIGHT + GLOBAL_SYS_NAVIGATION_HEIGHT)
+
+//tabbar height 49
+
+#define GLOBAL_SYS_TABBAR_HEIGHT ((IS_IPHONE_X_XS || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? 83.0 : 49.0)
+
+//home indicator高度 34
+
+#define GLOBAL_SYS_HOME_INDICATOR_HEIGHT ((IS_IPHONE_X_XS || IS_IPHONE_XR || IS_IPHONE_XSMAX) ? 34.0 : 0.0)
+
+//非安全区域的高度
+
+#define GLOBAL_SYS_OHTER_HEIGHT_WITH_TABBAR (GLOBAL_SYS_STATUS_HEIGHT + GLOBAL_SYS_NAVIGATION_HEIGHT + GLOBAL_SYS_TABBAR_HEIGHT)
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+#define kMainColor @"2272FF"
+
+#define Margin_horizontal 18
+
+#define kToken @""
+
+
+/*
+圆角、边框
+ */
+#define PCBViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+#endif /* Invoice_Prefix_pch */

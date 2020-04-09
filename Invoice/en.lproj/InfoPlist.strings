@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Invoice
+
+  Created by zj on 2020/3/30.
+  Copyright © 2020 zj. All rights reserved.
+*/
+CFBundleDisplayName = "Invoice";

@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  Invoice
+
+  Created by zj on 2020/3/30.
+  Copyright © 2020 zj. All rights reserved.
+*/
+
+"MyBusiness" = "   My Business";
+"Invoice" = "Invoice";
+"Estimate" = "Estimate";
+"Client" = "Client";
+"Sales of this year"="Sales of this year";
+"average" = "Daily average:$";
+"$" = "$";
+"Name" = "Name";
+"items to check" = "items to check";
+"Total unpaid" = "Total unpaid";
+"Total overdue" = "Total overdue";
+"Latest invoices" = "Latest invoices";
+"Clients" = "Clients";
+
+//Docunment
+"Search" = "Search";
+"Create and manage your clients" = "Create and manage your clients";
+"Items" = "Items";
+"Reusable services or products" = "Reusable services or products";
+"Invoices" = "Invoices";
+"Charge for services or products" = "Charge for services or products";
+"Estimate" = "Estimate";
+"Send a proposal of services or products" = "Send a proposal of services or products";
+"Purchase orders" = "Purchase orders";
+"Request a purchase from a seller" = "Request a purchase from a seller";
+"Credit memos" = "Credit memos";
+"Issue a cost reduction or cancellation of an invoice" = "Issue a cost reduction or cancellation of an invoice";
+"Expenses" = "Expenses";
+"Track your company’s costs" = "Track your company’s costs";
+"Time Tracking" = "Time Tracking";
+"Track work hours" = "Track work hours";
+"Trash" = "Trash";
+"Deleted files will remain in the trash" = "Deleted files will remain in the trash";
+"Price" = "Price";
+"Number" = "Number";
+"Date" = "Date";
+"DUE Date" = "DUE Date";
+"" = "";
+
+//Client
+"Add Client" = "Add Client";
+"Name" = "Name";
+"E-mail" = "E-mail";
+"Phone" = "Phone";
+"Moble" = "Moble";
+"Company" = "Company";
+"Save" = "Save";
+"Billing Adresss" = "Billing Adresss";
+"Shipping Adress" = "Shipping Adress";
+
+
