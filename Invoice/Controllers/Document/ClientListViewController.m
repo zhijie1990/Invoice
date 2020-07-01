@@ -8,6 +8,7 @@
 
 #import "ClientListViewController.h"
 #import "DocumentTemp1Cell.h"
+#import "ClinetInfoViewController.h"
 
 @interface ClientListViewController ()
 @property(nonatomic,strong)UIButton *backButton1;
@@ -158,6 +159,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ClinetInfoViewController *VC  = [[ClinetInfoViewController alloc]init];
+    DocumentTemp1Cell *cell = (DocumentTemp1Cell *)[tableView cellForRowAtIndexPath:indexPath];
+    VC.name.text =cell.lable1.text;
+    [self.navigationController pushViewController:VC animated:YES];
     
 }
 

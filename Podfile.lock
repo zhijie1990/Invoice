@@ -14,6 +14,18 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BRPickerView (2.5.7):
+    - BRPickerView/AddressPickerView (= 2.5.7)
+    - BRPickerView/Base (= 2.5.7)
+    - BRPickerView/DatePickerView (= 2.5.7)
+    - BRPickerView/StringPickerView (= 2.5.7)
+  - BRPickerView/AddressPickerView (2.5.7):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.5.7)
+  - BRPickerView/DatePickerView (2.5.7):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.5.7):
+    - BRPickerView/Base
   - CYLTabBarController (1.28.5):
     - CYLTabBarController/Core (= 1.28.5)
   - CYLTabBarController/Core (1.28.5)
@@ -29,6 +41,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BRPickerView (~> 2.5.7)
   - CYLTabBarController
   - DZNEmptyDataSet
   - IQKeyboardManager
@@ -39,6 +52,8 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - BRPickerView
   trunk:
     - AFNetworking
     - CYLTabBarController
@@ -52,6 +67,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BRPickerView: 4cbb953f0f64722a4424cf5656ca197dd75b47fd
   CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
@@ -61,6 +77,6 @@ SPEC CHECKSUMS:
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4dcd59e03c8c47ba6f514e211b1b00d4f2078e68
+PODFILE CHECKSUM: 88da04defcbca66c9a07189a2f9e89f39a9c1e26
 
 COCOAPODS: 1.9.0

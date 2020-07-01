@@ -1,6 +1,7 @@
 # Uncomment the next line to define a global platform for your project
   platform :ios, '10.0'
   inhibit_all_warnings!
+  source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Invoice' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -14,6 +15,7 @@ target 'Invoice' do
   pod 'CYLTabBarController' #TabBar
   pod 'Masonry', '~> 1.1.0'
   pod 'IQKeyboardManager'
+  pod 'BRPickerView','~> 2.5.7'
 
 
 
